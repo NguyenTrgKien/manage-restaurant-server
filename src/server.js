@@ -10,7 +10,7 @@ import cookieParser from 'cookie-parser';
 
 dotenv.config(); // Nạp tất cả các biến môi trường vào process.env
 const corsOption = {
-  origin: ['http://localhost:5173', 'https://8362-2001-ee0-52de-9ae0-2d5f-4977-d408-6a9e.ngrok-free.app', ], // Đường dẫn cho phép 
+  origin: ['http://localhost:5173', 'https://nguyentrgkien.github.io/mange-restaurant-ui/', ], // Đường dẫn cho phép 
 
   credentials: true // Cho phép gửi cookie từ frontend
 }

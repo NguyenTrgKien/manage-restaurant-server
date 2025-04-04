@@ -2,11 +2,11 @@
 // const { Sequelize } = require('sequelize');
 const Sequelize = require('sequelize');
 
-const sequelize = new Sequelize('manage_restaurant', 'root', null, { 
-  host: 'localhost',
+const sequelize = new Sequelize('railway', 'root', "HqEcUecQHKeIVoPKURDxKfpxCCPYllwL", { 
+  host: 'mainline.proxy.rlwy.net',
   dialect: 'mysql' ,
   logging: false
-});
+}); 
 
 const connectDB = async () => { // Tạo một hàm gọi liền
     try{
