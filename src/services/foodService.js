@@ -200,7 +200,7 @@ const foodService = {
             }
         }catch(error){
             console.log('Lỗi nè', error);
-            throw Error(error);
+            throw new Error(error);
         }
     },
 
