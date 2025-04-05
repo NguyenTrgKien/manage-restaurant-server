@@ -1,23 +1,23 @@
 {
   "development": {
     "username": "root",
-    "password": "HqEcUecQHKeIVoPKURDxKfpxCCPYllwL",
+    "password": "auAdrAVmFkquAMKLJkhDVisPqgkDvJPP",
     "database": "railway",
-    "host": "mainline.proxy.rlwy.net",
+    "host": "shuttle.proxy.rlwy.net",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "HqEcUecQHKeIVoPKURDxKfpxCCPYllwL",
+    "password": "auAdrAVmFkquAMKLJkhDVisPqgkDvJPP",
     "database": "railway",
-    "host": "mainline.proxy.rlwy.net",
+    "host": "shuttle.proxy.rlwy.net",
     "dialect": "mysql"
   },
   "production": {
     "username": "root",
-    "password": "HqEcUecQHKeIVoPKURDxKfpxCCPYllwL",
+    "password": "auAdrAVmFkquAMKLJkhDVisPqgkDvJPP",
     "database": "railway",
-    "host": "mainline.proxy.rlwy.net",
+    "host": "shuttle.proxy.rlwy.net",
     "dialect": "mysql"
   }
 }
