@@ -6,7 +6,7 @@ const sequelize = new Sequelize(
   process.env.DB_PASSWORD || "HqEcUecQHKeIVoPKURDxKfpxCCPYllwL",
   {
     host: process.env.DB_HOST || "mainline.proxy.rlwy.net",
-    dialect: process.env.DB_DIALECT || "mysql",
+    dialect: process.env.DB_DIALECT,
     port: process.env.DB_PORT || 17820,
     logging: false,
     dialectOptions: {
