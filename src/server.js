@@ -33,7 +33,7 @@ app.use(cors({
   origin: ['https://nguyentrgkien.github.io/mange-restaurant-ui', 'https://nguyentrgkien.github.io'],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization']
+  allowedHeaders: ['Content-Type', 'Authorization',  'ngrok-skip-browser-warning']
 }));
 initRoute(app);
 
