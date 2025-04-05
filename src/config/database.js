@@ -7,7 +7,10 @@ const sequelize = new Sequelize('railway', 'root', "HqEcUecQHKeIVoPKURDxKfpxCCPY
   host: 'mainline.proxy.rlwy.net',
   dialect: 'mysql',
   port: 17820,
-  logging: false
+  logging: false,
+  dialectOptions: {
+    connectTimeout: 20000, // Tăng timeout lên 20 giây
+  }
 }); 
 
 const connectDB = async () => { // Tạo một hàm gọi liền
