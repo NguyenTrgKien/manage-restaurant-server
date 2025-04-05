@@ -9,11 +9,6 @@ import session from 'express-session';
 import cookieParser from 'cookie-parser';
 
 dotenv.config(); // Nạp tất cả các biến môi trường vào process.env
-app.use(cors({
-  origin: ['https://nguyentrgkien.github.io/mange-restaurant-ui', 'https://nguyentrgkien.github.io'],
-  credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'DELETE']
-}));
 
 // Cấu hình session để có thể làm việc với cookie
 // Express-session sẽ gửi session Id này về client
@@ -34,7 +29,11 @@ app.use(session({
 app.use(cookieParser());
 connectDB(); // Kết nối tới Cơ Sở Dữ Liệu
 configEngine(app);
-app.use(cors(corsOption));
+app.use(cors({
+  origin: ['https://nguyentrgkien.github.io/mange-restaurant-ui', 'https://nguyentrgkien.github.io'],
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE']
+}));
 initRoute(app);
 
  
