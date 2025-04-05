@@ -9,7 +9,7 @@ const sequelize = new Sequelize('railway', 'root', "HqEcUecQHKeIVoPKURDxKfpxCCPY
   port: 17820,
   logging: false,
   dialectOptions: {
-    connectTimeout: 20000, // Tăng timeout lên 20 giây
+    connectTimeout: 20000, // Tăng ti   meout lên 20 giây
   }
 }); 
 
@@ -20,6 +20,5 @@ const connectDB = async () => { // Tạo một hàm gọi liền
     }catch(error){
         console.error("Không thể kết nối tới Cơ Sở Dữ Liệu!");
     }
-};
-
+}
 export default connectDB;
