@@ -10,7 +10,7 @@ import cookieParser from 'cookie-parser';
 
 dotenv.config(); // Nạp tất cả các biến môi trường vào process.env
 const corsOption = {
-  origin: ['https://nguyentrgkien.github.io/mange-restaurant-ui/', 'https://nguyentrgkien.github.io'], // Đường dẫn cho phép 
+  origin: ['https://nguyentrgkien.github.io/mange-restaurant-ui', 'https://nguyentrgkien.github.io'], // Đường dẫn cho phép 
 
   credentials: true // Cho phép gửi cookie từ frontend
 }
@@ -38,7 +38,7 @@ app.use(cors(corsOption));
 initRoute(app);
 
  
-const port = process.env.PORT; 
+const port = process.env.PORT || 1000; 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
