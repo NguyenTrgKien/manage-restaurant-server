@@ -2,13 +2,13 @@ import { Sequelize } from "sequelize";
 
 // Khởi tạo Sequelize với biến môi trường
 const sequelize = new Sequelize(
-  process.env.DB_NAME || "railway",          // Tên database
-  process.env.DB_USER || "root",             // Tên người dùng
-  process.env.DB_PASSWORD || "QjFueGmXyIqzBCorKcrJZaQPvcDELfEd", // Mật khẩu
+  process.env.MYSQLDATABASE,          // Tên database
+  process.env.MYSQLUSER,             // Tên người dùng
+  process.env.MYSQLPASSWORD, // Mật khẩu
   {
-    host: process.env.DB_HOST || "mainline.proxy.rlwy.net", // Host
+    host: process.env.MYSQLHOST, // Host
     dialect: "mysql",                               // Loại database
-    port: process.env.DB_PORT || 17820,             // Port
+    port: process.env.MYSQLPORT || 17820,             // Port
     logging: false,                                 // Tắt log SQL
     dialectOptions: {
       connectTimeout: 20000,                       // Timeout 20 giây
