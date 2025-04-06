@@ -30,7 +30,7 @@ app.use(cookieParser());
 connectDB(); // Kết nối tới Cơ Sở Dữ Liệu
 configEngine(app);
 app.use(cors({
-  origin: ['https://nguyentrgkien.github.io/mange-restaurant-ui', 'https://nguyentrgkien.github.io'],
+  origin: ['https://nguyentrgkien.github.io'],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']
@@ -38,7 +38,7 @@ app.use(cors({
 initRoute(app);
 
  
-const port = process.env.PORT || 1000; 
+const port = process.env.PORT || 10000; 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
