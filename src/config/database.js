@@ -1,13 +1,13 @@
 import { Sequelize } from "sequelize";
 
 const sequelize = new Sequelize(
-  process.env.DB_DATABASE || "railway",
-  process.env.DB_USERNAME || "root",
-  process.env.DB_PASSWORD || "auAdrAVmFkquAMKLJkhDVisPqgkDvJPP",
+  process.env.MYSQLDATABASE || "railway",
+  process.env.MYSQLUSER || "root",
+  process.env.MYSQLPASSWORD || "auAdrAVmFkquAMKLJkhDVisPqgkDvJPP",
   {
-    host: process.env.DB_HOST || "shuttle.proxy.rlwy.net",
+    host: process.env.MYSQLHOST || "shuttle.proxy.rlwy.net",
     dialect: process.env.DB_DIALECT || 'mysql',
-    port: process.env.DB_PORT || 52639,
+    port: process.env.MYSQLPORT || 52639,
     logging: false,
     dialectOptions: {
       connectTimeout: 20000,
@@ -21,6 +21,7 @@ const connectDB = async () => {
     console.log("Kết nối đến Cơ Sở Dữ Liệu Thành Công!");
   } catch (error) {
     console.error("Không thể kết nối tới Cơ Sở Dữ Liệu:", error);
+    process.exit(1);
   }
 };
 

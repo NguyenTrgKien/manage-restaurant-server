@@ -141,7 +141,9 @@ const initRoute = (app) => {
 
     router.get('/api/v1/get-evaluate-detail-product/:foodId', foodController.getEvaluateDetailProduct);
 
-
+    router.get('/', (req, res) => {
+        res.send('Server đang chạy!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!');
+    })
     ///api/v1/check-order-table-dish
 
     return app.use("/", router);
