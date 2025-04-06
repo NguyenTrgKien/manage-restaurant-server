@@ -32,8 +32,7 @@ configEngine(app);
 app.use(cors({
   origin: ['https://nguyentrgkien.github.io'],
   credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization']
+  methods: ['GET', 'POST', 'PUT', 'DELETE']
 }));
 initRoute(app);
 
