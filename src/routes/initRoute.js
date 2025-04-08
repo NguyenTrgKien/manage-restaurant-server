@@ -144,7 +144,6 @@ const initRoute = (app) => {
     router.get('/', (req, res) => {
         res.send('Server đang chạy!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!');
     })
-    ///api/v1/check-order-table-dish
 
     return app.use("/", router);
 }
